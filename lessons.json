@@ -1,0 +1,132 @@
+{
+    "html": {
+      "id": "html",
+      "title": "HTML",
+      "description": "Learn the basics and advanced concepts of HTML, the standard language for creating web pages.",
+      "lessons": [
+        {
+          "id": "html_intro",
+          "title": "Introduction",
+          "description": "An overview of HTML and its role in web development.",
+          "content": [
+            "What is HTML?",
+            "Basic structure of an HTML document"
+          ]
+        },
+        {
+          "id": "html_elements_tags",
+          "title": "Elements and Tags",
+          "description": "Understanding HTML elements and tags used to structure web content.",
+          "content": [
+            "Headings, paragraphs, lists",
+            "Links, images, and media",
+            "Forms and input types",
+            "Semantic elements (e.g., <header>, <footer>, <article>, <section>)"
+          ]
+        },
+        {
+          "id": "html_attributes",
+          "title": "Attributes",
+          "description": "Learn about HTML attributes and how they modify the behavior of elements.",
+          "content": [
+            "Global attributes (id, class, style, etc.)",
+            "Specific attributes for different elements"
+          ]
+        },
+        {
+          "id": "html_accessibility",
+          "title": "Accessibility (a11y)",
+          "description": "Making web content accessible to all users, including those with disabilities.",
+          "content": [
+            "Semantic HTML",
+            "ARIA roles and attributes"
+          ]
+        },
+        {
+          "id": "html5_features",
+          "title": "HTML5 Features",
+          "description": "New features introduced in HTML5 to enhance web development.",
+          "content": [
+            "New elements (e.g., <video>, <audio>, <canvas>)",
+            "Local storage, session storage",
+            "Geolocation API"
+          ]
+        }
+      ]
+    },
+    "css": {
+      "id": "css",
+      "title": "CSS",
+      "description": "Learn the basics and advanced techniques of CSS for styling web pages.",
+      "lessons": [
+        {
+          "id": "css_intro",
+          "title": "Introduction to CSS",
+          "description": "An overview of CSS and its role in styling web content.",
+          "content": [
+            "CSS syntax and structure",
+            "Selectors and combinators",
+            "Basic styling (color, background, border)"
+          ]
+        },
+        {
+          "id": "css_box_model",
+          "title": "Box Model",
+          "description": "Understanding the CSS box model and how it affects layout.",
+          "content": [
+            "Margin, border, padding, content",
+            "Box-sizing property"
+          ]
+        },
+        {
+          "id": "css_layout",
+          "title": "Layout",
+          "description": "Techniques for creating layouts using CSS.",
+          "content": [
+            "Display property",
+            "Positioning (static, relative, absolute, fixed, sticky)",
+            "Flexbox",
+            "Grid Layout"
+          ]
+        },
+        {
+          "id": "css_responsive_design",
+          "title": "Responsive Design",
+          "description": "Building responsive web pages that work across different devices.",
+          "content": [
+            "Media queries",
+            "Responsive units (%, em, rem, vw, vh)",
+            "Mobile-first design"
+          ]
+        },
+        {
+          "id": "css_preprocessors",
+          "title": "CSS Preprocessors",
+          "description": "Using preprocessors to enhance CSS with additional features.",
+          "content": [
+            "Introduction to SASS/LESS",
+            "Variables, nesting, mixins, functions"
+          ]
+        },
+        {
+          "id": "css_animations_transitions",
+          "title": "Animations and Transitions",
+          "description": "Adding interactivity and motion to web pages using CSS.",
+          "content": [
+            "CSS transitions",
+            "CSS animations (keyframes)"
+          ]
+        },
+        {
+          "id": "css_frameworks",
+          "title": "CSS Frameworks",
+          "description": "Using CSS frameworks to streamline styling and layout tasks.",
+          "content": [
+            "Overview of Bootstrap, Tailwind CSS, Material-UI",
+            "Customizing frameworks"
+          ]
+        }
+      ]
+    }
+  }
+  
