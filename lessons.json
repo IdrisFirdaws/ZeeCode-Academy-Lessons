@@ -1,6 +1,4 @@
 {
-
-{
   "frontend_roadmap": {
     "title": "Frontend Development Roadmap",
     "description": "A comprehensive guide to becoming a proficient frontend developer.",
@@ -130,8 +128,7 @@
         ]
       }
     ]
-  }
-},
+  },
   
   "html": {
       "id": "html",
