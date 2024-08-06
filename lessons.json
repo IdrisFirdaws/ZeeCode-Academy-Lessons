@@ -139,10 +139,108 @@
         "title": "Introduction",
         "description": "An overview of HTML and its role in web development.",
         "content": [
-          "What is HTML?",
-          "Basic structure of an HTML document"
+          {
+            "id": "what_is_html",
+            "title": "What is HTML?",
+            "description": "HTML (HyperText Markup Language) is the standard markup language used to create web pages.",
+            "details": [
+              "HTML stands for HyperText Markup Language.",
+              "It is the standard language for creating web pages and web applications.",
+              "HTML describes the structure of a web page using markup.",
+              "Elements are the building blocks of HTML pages.",
+              "HTML elements are represented by tags, such as <html>, <head>, <body>, <h1>, <p>, etc."
+            ]
+          },
+          {
+            "id": "basic_structure",
+            "title": "Basic structure of an HTML document",
+            "description": "An overview of the essential elements that form the structure of an HTML document.",
+            "details": [
+              "An HTML document has a defined structure that includes a doctype, html, head, and body sections.",
+              "Below is a simple example of the basic structure of an HTML document:"
+            ],
+            "code": [
+              "<!DOCTYPE html>",
+              "<html>",
+              "  <head>",
+              "    <title>Page Title</title>",
+              "    <meta charset=\"UTF-8\">",
+              "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+              "  </head>",
+              "  <body>",
+              "    <h1>This is a Heading</h1>",
+              "    <p>This is a paragraph.</p>",
+              "    <a href=\"https://www.example.com\">This is a link</a>",
+              "    <img src=\"image.jpg\" alt=\"An example image\">",
+              "  </body>",
+              "</html>"
+            ],
+            "explanation": [
+              "1. <!DOCTYPE html>: This declaration defines the document type and version of HTML.",
+              "2. <html>: This element is the root element of an HTML page.",
+              "3. <head>: This element contains meta-information about the HTML document, such as its title and links to stylesheets.",
+              "4. <title>: This element sets the title of the HTML document, which is displayed in the browser's title bar or tab.",
+              "5. <meta charset=\"UTF-8\">: This meta tag specifies the character encoding for the HTML document.",
+              "6. <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">: This meta tag sets the viewport to make the website responsive on different devices.",
+              "7. <body>: This element contains the content of the HTML document, such as text, images, links, etc.",
+              "8. <h1>: This element defines a top-level heading.",
+              "9. <p>: This element defines a paragraph.",
+              "10. <a href=\"https://www.example.com\">: This element defines a hyperlink.",
+              "11. <img src=\"image.jpg\" alt=\"An example image\">: This element embeds an image in the web page."
+            ],
+            "image_url": "https://example.com/path/to/your/image.png"
+          },
+          {
+            "id": "html_elements",
+            "title": "HTML Elements",
+            "description": "Understanding the different types of HTML elements and their roles.",
+            "details": [
+              "HTML elements are the building blocks of a web page.",
+              "Each element is defined by a tag, which usually consists of an opening tag and a closing tag.",
+              "Some elements are self-closing and do not require a closing tag.",
+              "Elements can have attributes that provide additional information about the element."
+            ],
+            "examples": [
+              {
+                "code": "<h2>Subheading</h2>",
+                "description": "Defines a second-level heading."
+              },
+              {
+                "code": "<ul><li>Item 1</li><li>Item 2</li></ul>",
+                "description": "Defines an unordered list with list items."
+              },
+              {
+                "code": "<table><tr><th>Header</th></tr><tr><td>Data</td></tr></table>",
+                "description": "Defines a table with a header row and a data row."
+              },
+              {
+                "code": "<input type=\"text\" placeholder=\"Enter text\">",
+                "description": "Defines a text input field."
+              }
+            ]
+          },
+          {
+            "id": "semantic_html",
+            "title": "Semantic HTML",
+            "description": "Using HTML elements to convey the meaning and structure of web content.",
+            "details": [
+              "Semantic HTML elements provide meaningful information about the content they contain.",
+              "Examples include <header>, <footer>, <article>, <section>, <nav>, and <aside>.",
+              "Using semantic HTML improves accessibility, SEO, and maintainability of web pages."
+            ],
+            "examples": [
+              {
+                "code": "<article><h2>Article Title</h2><p>Article content...</p></article>",
+                "description": "Defines an article with a title and content."
+              },
+              {
+                "code": "<nav><ul><li><a href=\"#home\">Home</a></li><li><a href=\"#about\">About</a></li></ul></nav>",
+                "description": "Defines a navigation menu with links."
+              }
+            ]
+          }
         ]
-      },
+      },      
       {
         "id": "html_elements_tags",
         "title": "Elements and Tags",
