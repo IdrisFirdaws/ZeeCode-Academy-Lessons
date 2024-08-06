@@ -187,7 +187,7 @@
   "css": {
     "id": "css",
     "title": "CSS",
-    "description": "Learn the basics and advanced techniques of CSS for styling web pages.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Learn the basics and advanced techniques of CSS for styling web pages.",
     "lessons": [
       {
         "id": "css_intro",
@@ -261,7 +261,7 @@
   "javascript": {
     "id": "javascript",
     "title": "JavaScript",
-    "description": "Understand the basics of programming, ES6+ features, DOM manipulation, event handling, and AJAX.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Understand the basics of programming, ES6+ features, DOM manipulation, event handling, and AJAX.",
     "lessons": [
       {
         "id": "js_intro",
@@ -310,7 +310,7 @@
   "version_control": {
     "id": "version_control",
     "title": "Version Control",
-    "description": "Learn to manage code changes and collaborate with others.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Learn to manage code changes and collaborate with others.",
     "lessons": [
       {
         "id": "git_basics",
@@ -357,7 +357,7 @@
   "frameworks_libraries": {
     "id": "frameworks_libraries",
     "title": "Frontend Frameworks and Libraries",
-    "description": "Understand the frameworks and libraries that enhance frontend development.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Understand the frameworks and libraries that enhance frontend development.",
     "lessons": [
       {
         "id": "css_frameworks",
@@ -403,7 +403,7 @@
   "package_build_tools": {
     "id": "package_build_tools",
     "title": "Package Managers and Build Tools",
-    "description": "Manage project dependencies and optimize your build process.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Manage project dependencies and optimize your build process.",
     "lessons": [
       {
         "id": "package_managers",
@@ -440,7 +440,7 @@
   "advanced_js": {
     "id": "advanced_js",
     "title": "Advanced JavaScript",
-    "description": "Deepen your understanding of JavaScript and its ecosystem.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Deepen your understanding of JavaScript and its ecosystem.",
     "lessons": [
       {
         "id": "async_programming",
@@ -478,7 +478,7 @@
   "api_interaction": {
     "id": "api_interaction",
     "title": "API Interaction",
-    "description": "Learn to communicate with servers and fetch data.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Learn to communicate with servers and fetch data.",
     "lessons": [
       {
         "id": "rest_apis",
@@ -505,7 +505,7 @@
   "testing": {
     "id": "testing",
     "title": "Testing",
-    "description": "Ensure the quality and reliability of your code.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Ensure the quality and reliability of your code.",
     "lessons": [
       {
         "id": "unit_testing",
@@ -533,7 +533,7 @@
   "performance_optimization": {
     "id": "performance_optimization",
     "title": "Performance Optimization",
-    "description": "Improve the speed and responsiveness of your web applications.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Improve the speed and responsiveness of your web applications.",
     "lessons": [
       {
         "id": "web_performance",
@@ -561,7 +561,7 @@
   "accessibility": {
     "id": "accessibility",
     "title": "Accessibility (a11y)",
-    "description": "Ensure your web applications are usable by everyone.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Ensure your web applications are usable by everyone.",
     "lessons": [
       {
         "id": "accessibility_basics",
@@ -588,7 +588,7 @@
   "security": {
     "id": "security",
     "title": "Security",
-    "description": "Protect your applications from common vulnerabilities.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Protect your applications from common vulnerabilities.",
     "lessons": [
       {
         "id": "common_vulnerabilities",
@@ -615,7 +615,7 @@
   "devops_deployment": {
     "id": "devops_deployment",
     "title": "DevOps and Deployment",
-    "description": "Learn to deploy and maintain your applications.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Learn to deploy and maintain your applications.",
     "lessons": [
       {
         "id": "hosting_cicd",
@@ -650,7 +650,7 @@
   "soft_skills": {
     "id": "soft_skills",
     "title": "Soft Skills and Best Practices",
-    "description": "Develop essential non-technical skills for effective collaboration.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Develop essential non-technical skills for effective collaboration.",
     "lessons": [
       {
         "id": "communication",
@@ -684,7 +684,7 @@
   "portfolio_projects": {
     "id": "portfolio_projects",
     "title": "Portfolio and Personal Projects",
-    "description": "Build a portfolio and engage in projects to showcase your skills.",
+    "description": "THIS LESSON IS STILL BEING UUPDATED. Build a portfolio and engage in projects to showcase your skills.",
     "lessons": [
       {
         "id": "portfolio",
