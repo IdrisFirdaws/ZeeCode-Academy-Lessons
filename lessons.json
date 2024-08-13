@@ -11,7 +11,12 @@
           "HTML: Learn the structure of web pages, semantic HTML, forms, tables, and accessibility.",
           "CSS: Master styling, layouts (Flexbox, Grid), animations, responsive design, and preprocessors like SASS or LESS.",
           "JavaScript: Understand the basics of programming, ES6+ features, DOM manipulation, event handling, and AJAX."
-        ]
+        ],
+        "code_snippets": {
+          "html": "<!-- Basic HTML Structure -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Document</title>\n</head>\n<body>\n  <h1>Hello, World!</h1>\n</body>\n</html>",
+          "css": "/* Basic CSS */\nbody {\n  font-family: Arial, sans-serif;\n  line-height: 1.6;\n}\nh1 {\n  color: #333;\n}",
+          "javascript": "// Basic JavaScript\nconsole.log('Hello, World!');"
+        }
       },
       {
         "id": "version_control",
@@ -20,7 +25,11 @@
         "content": [
           "Git: Learn version control basics, branching, merging, pull requests, and workflows (e.g., GitFlow).",
           "GitHub/GitLab/Bitbucket: Familiarize yourself with using these platforms for code hosting and collaboration."
-        ]
+        ],
+        "code_snippets": {
+          "git": "# Initialize a Git repository\n$ git init\n\n# Add changes to staging\n$ git add .\n\n# Commit changes\n$ git commit -m \"Initial commit\"",
+          "github": "# Create a new repository on GitHub\n# Navigate to the repository and copy the URL\n$ git remote add origin <repository-URL>\n$ git push -u origin master"
+        }
       },
       {
         "id": "frameworks_libraries",
@@ -30,7 +39,12 @@
           "CSS Frameworks: Bootstrap, Tailwind CSS, Material-UI.",
           "JavaScript Frameworks/Libraries: React, Vue.js, Angular.",
           "Learn component-based architecture, state management (e.g., Redux for React, Vuex for Vue.js), routing, and form handling."
-        ]
+        ],
+        "code_snippets": {
+          "react": "import React from 'react';\n\nfunction App() {\n  return <h1>Hello, React!</h1>;\n}\n\nexport default App;",
+          "vue": "<template>\n  <h1>Hello, Vue!</h1>\n</template>\n\n<script>\nexport default {\n  name: 'App'\n};\n</script>",
+          "angular": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  template: '<h1>Hello, Angular!</h1>'\n})\nexport class AppComponent {}"
+        }
       },
       {
         "id": "package_build_tools",
@@ -40,7 +54,11 @@
           "Package Managers: npm, Yarn.",
           "Build Tools: Webpack, Parcel, Vite.",
           "Task Runners: Gulp, Grunt."
-        ]
+        ],
+        "code_snippets": {
+          "npm": "# Initialize a new npm project\n$ npm init -y\n\n# Install a package\n$ npm install <package-name>",
+          "webpack": "const path = require('path');\n\nmodule.exports = {\n  entry: './src/index.js',\n  output: {\n    filename: 'bundle.js',\n    path: path.resolve(__dirname, 'dist')\n  }\n};"
+        }
       },
       {
         "id": "advanced_js",
@@ -50,7 +68,11 @@
           "Asynchronous Programming: Promises, async/await, fetch API.",
           "JavaScript Design Patterns: Module, Singleton, Observer, Factory.",
           "TypeScript: Learn the basics and advantages of using TypeScript over plain JavaScript."
-        ]
+        ],
+        "code_snippets": {
+          "async": "async function fetchData() {\n  try {\n    let response = await fetch('https://api.example.com/data');\n    let data = await response.json();\n    console.log(data);\n  } catch (error) {\n    console.error('Error:', error);\n  }\n}",
+          "typescript": "interface Person {\n  name: string;\n  age: number;\n}\n\nconst person: Person = {\n  name: 'John Doe',\n  age: 30\n};\n\nconsole.log(person);"
+        }
       },
       {
         "id": "api_interaction",
@@ -59,7 +81,11 @@
         "content": [
           "REST APIs: Understanding CRUD operations, status codes, headers, and JSON.",
           "GraphQL: Basics of GraphQL, queries, mutations, and using GraphQL clients like Apollo."
-        ]
+        ],
+        "code_snippets": {
+          "rest": "fetch('https://api.example.com/data')\n  .then(response => response.json())\n  .then(data => console.log(data))\n  .catch(error => console.error('Error:', error));",
+          "graphql": "import { gql } from '@apollo/client';\n\nconst GET_DATA = gql`\n  query GetData {\n    data {\n      id\n      value\n    }\n  }\n`;"
+        }
       },
       {
         "id": "testing",
@@ -68,7 +94,11 @@
         "content": [
           "Unit Testing: Frameworks like Jest, Mocha.",
           "Integration and End-to-End Testing: Cypress, Selenium, Puppeteer."
-        ]
+        ],
+        "code_snippets": {
+          "jest": "test('adds 1 + 2 to equal 3', () => {\n  expect(1 + 2).toBe(3);\n});",
+          "cypress": "describe('My First Test', () => {\n  it('Visits the app', () => {\n    cy.visit('https://example.com');\n    cy.contains('Hello, World!');\n  });\n});"
+        }
       },
       {
         "id": "performance_optimization",
@@ -77,7 +107,11 @@
         "content": [
           "Web Performance: Lazy loading, code splitting, image optimization, and minimizing render-blocking resources.",
           "Web Vitals: Core Web Vitals, Lighthouse, PageSpeed Insights."
-        ]
+        ],
+        "code_snippets": {
+          "lazy_loading": "<img src=\"placeholder.jpg\" data-src=\"image.jpg\" class=\"lazyload\" alt=\"Image\">",
+          "code_splitting": "import(/* webpackChunkName: \"my-chunk-name\" */ './myModule').then(module => {\n  const myModule = module.default;\n});"
+        }
       },
       {
         "id": "accessibility",
@@ -86,7 +120,11 @@
         "content": [
           "Basics: ARIA roles, keyboard navigation, screen reader compatibility.",
           "Tools: Axe, WAVE, Lighthouse accessibility audit."
-        ]
+        ],
+        "code_snippets": {
+          "aria": "<button aria-label=\"Close\">×</button>",
+          "keyboard_navigation": "<a href=\"#section\" tabindex=\"0\">Go to section</a>"
+        }
       },
       {
         "id": "security",
@@ -95,7 +133,11 @@
         "content": [
           "Common Vulnerabilities: XSS, CSRF, CORS.",
           "Best Practices: Content Security Policy, secure cookies, HTTPS."
-        ]
+        ],
+        "code_snippets": {
+          "csp": "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self';\">",
+          "secure_cookies": "Set-Cookie: sessionId=abc123; Secure; HttpOnly; SameSite=Strict"
+        }
       },
       {
         "id": "devops_deployment",
@@ -105,7 +147,11 @@
           "Hosting and CI/CD: Platforms like Netlify, Vercel, GitHub Actions.",
           "Containerization: Basics of Docker.",
           "Monitoring: Tools like Sentry for error tracking and performance monitoring."
-        ]
+        ],
+        "code_snippets": {
+          "docker": "FROM node:14\nWORKDIR /app\nCOPY package.json .\nRUN npm install\nCOPY . .\nCMD [\"npm\", \"start\"]",
+          "github_actions": "name: CI\n\non:\n  push:\n    branches:\n      - main\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - name: Set up Node.js\n        uses: actions/setup-node@v2\n        with:\n          node-version: '14'\n      - run: npm install\n      - run: npm test"
+        }
       },
       {
         "id": "soft_skills",
@@ -115,7 +161,11 @@
           "Communication: Working in teams, participating in code reviews.",
           "Project Management: Agile methodologies, using tools like Jira, Trello.",
           "Continuous Learning: Staying updated with the latest trends and best practices in the frontend ecosystem."
-        ]
+        ],
+        "code_snippets": {
+          "communication": "Example of a communication strategy document or guidelines.",
+          "project_management": "Example of a project plan or task list."
+        }
       },
       {
         "id": "portfolio_projects",
@@ -125,7 +175,11 @@
           "Portfolio: Create a personal website showcasing your skills and projects.",
           "Open Source: Contribute to open source projects to gain experience and visibility.",
           "Blogging or Content Creation: Share your knowledge through blog posts, tutorials, or videos."
-        ]
+        ],
+        "code_snippets": {
+          "portfolio": "<!-- Portfolio HTML -->\n<section id=\"portfolio\">\n  <h2>My Projects</h2>\n  <ul>\n    <li><a href=\"project1.html\">Project 1</a></li>\n    <li><a href=\"project2.html\">Project 2</a></li>\n  </ul>\n</section>",
+          "blogging": "<!-- Basic blog post HTML -->\n<article>\n  <header>\n    <h1>Blog Post Title</h1>\n    <p>Author: John Doe</p>\n  </header>\n  <p>This is the content of the blog post.</p>\n</article>"
+        }
       }
     ]
   },
@@ -141,7 +195,10 @@
         "content": [
           "What is HTML?",
           "Basic structure of an HTML document"
-        ]
+        ],
+        "code_snippets": {
+          "basic_structure": "<!-- Basic HTML Structure -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Document</title>\n</head>\n<body>\n  <h1>Hello, World!</h1>\n</body>\n</html>"
+        }
       },
       {
         "id": "html_elements_tags",
@@ -152,7 +209,10 @@
           "Links, images, and media",
           "Forms and input types",
           "Semantic elements (e.g., <header>, <footer>, <article>, <section>)"
-        ]
+        ],
+        "code_snippets": {
+          "elements_tags": "<!-- Example HTML Elements -->\n<h1>Main Heading</h1>\n<p>This is a paragraph.</p>\n<ul>\n  <li>Item 1</li>\n  <li>Item 2</li>\n</ul>\n<a href=\"https://example.com\">Visit Example</a>"
+        }
       },
       {
         "id": "html_attributes",
@@ -161,7 +221,10 @@
         "content": [
           "Global attributes (id, class, style, etc.)",
           "Specific attributes for different elements"
-        ]
+        ],
+        "code_snippets": {
+          "attributes": "<!-- Example HTML Attributes -->\n<img src=\"image.jpg\" alt=\"Description\" class=\"image-class\">\n<a href=\"https://example.com\" target=\"_blank\">Link</a>"
+        }
       },
       {
         "id": "html_accessibility",
@@ -170,7 +233,10 @@
         "content": [
           "Semantic HTML",
           "ARIA roles and attributes"
-        ]
+        ],
+        "code_snippets": {
+          "accessibility": "<button aria-label=\"Close\">×</button>"
+        }
       },
       {
         "id": "html5_features",
@@ -180,7 +246,10 @@
           "New elements (e.g., <video>, <audio>, <canvas>)",
           "Local storage, session storage",
           "Geolocation API"
-        ]
+        ],
+        "code_snippets": {
+          "html5_elements": "<!-- HTML5 Elements -->\n<video controls>\n  <source src=\"video.mp4\" type=\"video/mp4\">\n  Your browser does not support the video tag.\n</video>\n\n<audio controls>\n  <source src=\"audio.mp3\" type=\"audio/mp3\">\n  Your browser does not support the audio element.\n</audio>"
+        }
       }
     ]
   },
@@ -197,7 +266,10 @@
           "CSS syntax and structure",
           "Selectors and combinators",
           "Basic styling (color, background, border)"
-        ]
+        ],
+        "code_snippets": {
+          "css_basic": "/* Basic CSS */\nbody {\n  font-family: Arial, sans-serif;\n  line-height: 1.6;\n}\nh1 {\n  color: #333;\n}"
+        }
       },
       {
         "id": "css_box_model",
@@ -206,7 +278,10 @@
         "content": [
           "Margin, border, padding, content",
           "Box-sizing property"
-        ]
+        ],
+        "code_snippets": {
+          "box_model": "/* CSS Box Model */\n* {\n  box-sizing: border-box;\n}\n\n.example {\n  margin: 10px;\n  border: 1px solid #000;\n  padding: 20px;\n  width: 100%;\n}"
+        }
       },
       {
         "id": "css_layout",
@@ -217,7 +292,11 @@
           "Positioning (static, relative, absolute, fixed, sticky)",
           "Flexbox",
           "Grid Layout"
-        ]
+        ],
+        "code_snippets": {
+          "flexbox": "/* Flexbox Layout */\n.container {\n  display: flex;\n  justify-content: space-between;\n}\n.item {\n  flex: 1;\n  margin: 5px;\n}",
+          "grid": "/* Grid Layout */\n.container {\n  display: grid;\n  grid-template-columns: 1fr 2fr;\n  gap: 10px;\n}\n.item {\n  background-color: #f0f0f0;\n  padding: 10px;\n}"
+        }
       },
       {
         "id": "css_responsive_design",
@@ -227,7 +306,10 @@
           "Media queries",
           "Responsive units (%, em, rem, vw, vh)",
           "Mobile-first design"
-        ]
+        ],
+        "code_snippets": {
+          "media_queries": "/* Responsive Design */\n@media (max-width: 600px) {\n  .container {\n    flex-direction: column;\n  }\n}"
+        }
       },
       {
         "id": "css_preprocessors",
@@ -236,484 +318,156 @@
         "content": [
           "Introduction to SASS/LESS",
           "Variables, nesting, mixins, functions"
-        ]
-      },
-      {
-        "id": "css_animations_transitions",
-        "title": "Animations and Transitions",
-        "description": "Adding interactivity and motion to web pages using CSS.",
-        "content": [
-          "CSS transitions",
-          "CSS animations (keyframes)"
-        ]
-      },
-      {
-        "id": "css_frameworks",
-        "title": "CSS Frameworks",
-        "description": "Using CSS frameworks to streamline styling and layout tasks.",
-        "content": [
-          "Overview of Bootstrap, Tailwind CSS, Material-UI",
-          "Customizing frameworks"
-        ]
+        ],
+        "code_snippets": {
+          "sass": "$primary-color: #333;\n\n.container {\n  background-color: $primary-color;\n  .item {\n    color: white;\n  }\n}"
+        }
       }
     ]
   },
   "javascript": {
     "id": "javascript",
     "title": "JavaScript",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Understand the basics of programming, ES6+ features, DOM manipulation, event handling, and AJAX.",
+    "description": "Learn the fundamentals and advanced concepts of JavaScript.",
     "lessons": [
       {
         "id": "js_intro",
         "title": "Introduction to JavaScript",
         "description": "An overview of JavaScript and its role in web development.",
         "content": [
-          "What is JavaScript?",
-          "Basic syntax and structure",
-          "Variables, data types, and operators"
-        ]
+          "JavaScript syntax and basic operations",
+          "Data types and variables",
+          "Functions and scope"
+        ],
+        "code_snippets": {
+          "js_basic": "// Basic JavaScript\nconsole.log('Hello, World!');\n\nlet x = 10;\nconst y = 20;\nconsole.log(x + y);"
+        }
       },
       {
         "id": "js_dom",
         "title": "DOM Manipulation",
-        "description": "Learn how to interact with and manipulate the Document Object Model (DOM).",
+        "description": "Interacting with and modifying the Document Object Model.",
         "content": [
-          "Selecting and modifying elements",
+          "Selecting elements",
           "Event handling",
-          "Creating and deleting elements"
-        ]
+          "Modifying content and styles"
+        ],
+        "code_snippets": {
+          "dom": "document.getElementById('myElement').textContent = 'Hello, DOM!';"
+        }
       },
       {
-        "id": "js_es6",
-        "title": "ES6+ Features",
-        "description": "Learn the modern features of JavaScript introduced in ES6 and beyond.",
+        "id": "js_events",
+        "title": "Events",
+        "description": "Handling user interactions and events.",
         "content": [
-          "Let and const",
-          "Arrow functions",
-          "Template literals",
-          "Destructuring",
-          "Modules"
-        ]
+          "Event listeners",
+          "Event propagation and delegation",
+          "Common events (click, load, change)"
+        ],
+        "code_snippets": {
+          "events": "document.querySelector('button').addEventListener('click', () => {\n  alert('Button clicked!');\n});"
+        }
       },
       {
-        "id": "js_ajax",
-        "title": "AJAX",
-        "description": "Learn how to make asynchronous requests and update the web page dynamically.",
+        "id": "js_promises",
+        "title": "Promises and Async/Await",
+        "description": "Managing asynchronous operations with promises and async/await.",
         "content": [
-          "XMLHttpRequest",
-          "Fetch API",
-          "Working with JSON"
-        ]
+          "Creating and using promises",
+          "Async functions and await keyword",
+          "Error handling in asynchronous code"
+        ],
+        "code_snippets": {
+          "promises": "const fetchData = () => {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => {\n      resolve('Data fetched!');\n    }, 2000);\n  });\n};\n\nfetchData().then(data => console.log(data));",
+          "async_await": "const fetchData = async () => {\n  try {\n    let response = await fetch('https://api.example.com/data');\n    let data = await response.json();\n    console.log(data);\n  } catch (error) {\n    console.error('Error:', error);\n  }\n};\n\nfetchData();"
+        }
+      },
+      {
+        "id": "js_advanced",
+        "title": "Advanced JavaScript",
+        "description": "Deep dive into advanced JavaScript concepts and techniques.",
+        "content": [
+          "Closures and higher-order functions",
+          "Prototypes and inheritance",
+          "JavaScript design patterns"
+        ],
+        "code_snippets": {
+          "closures": "function makeCounter() {\n  let count = 0;\n  return function() {\n    count += 1;\n    return count;\n  };\n}\n\nconst counter = makeCounter();\nconsole.log(counter()); // 1\nconsole.log(counter()); // 2",
+          "inheritance": "class Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    console.log(`${this.name} makes a noise.`);\n  }\n}\n\nclass Dog extends Animal {\n  speak() {\n    console.log(`${this.name} barks.`);\n  }\n}\n\nconst dog = new Dog('Rex');\n dog.speak(); // Rex barks"
+        }
       }
     ]
   },
-  "version_control": {
-    "id": "version_control",
-    "title": "Version Control",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Learn to manage code changes and collaborate with others.",
+  "react": {
+    "id": "react",
+    "title": "React",
+    "description": "Learn React, a popular library for building user interfaces.",
     "lessons": [
       {
-        "id": "git_basics",
-        "title": "Git Basics",
-        "description": "Learn the basics of Git, a version control system.",
+        "id": "react_intro",
+        "title": "Introduction to React",
+        "description": "An overview of React and its core concepts.",
         "content": [
-          "Installing Git",
-          "Initializing a repository",
-          "Basic commands (add, commit, push, pull)"
-        ]
+          "What is React?",
+          "Components and props",
+          "State and lifecycle methods"
+        ],
+        "code_snippets": {
+          "react_intro": "import React from 'react';\n\nfunction App() {\n  return <h1>Hello, React!</h1>;\n}\n\nexport default App;"
+        }
       },
       {
-        "id": "git_branches",
-        "title": "Branching and Merging",
-        "description": "Learn how to work with branches in Git.",
-        "content": [
-          "Creating and switching branches",
-          "Merging branches",
-          "Handling merge conflicts"
-        ]
-      },
-      {
-        "id": "git_workflows",
-        "title": "Git Workflows",
-        "description": "Learn different workflows for using Git effectively.",
-        "content": [
-          "Feature branches",
-          "GitFlow",
-          "Pull requests"
-        ]
-      },
-      {
-        "id": "git_platforms",
-        "title": "Git Platforms",
-        "description": "Learn to use platforms like GitHub, GitLab, and Bitbucket for code hosting and collaboration.",
-        "content": [
-          "Creating repositories",
-          "Collaborating with others",
-          "Using issues and pull requests"
-        ]
-      }
-    ]
-  },
-  "frameworks_libraries": {
-    "id": "frameworks_libraries",
-    "title": "Frontend Frameworks and Libraries",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Understand the frameworks and libraries that enhance frontend development.",
-    "lessons": [
-      {
-        "id": "css_frameworks",
-        "title": "CSS Frameworks",
-        "description": "Learn about popular CSS frameworks.",
-        "content": [
-          "Overview of Bootstrap, Tailwind CSS, Material-UI",
-          "Customizing frameworks"
-        ]
-      },
-      {
-        "id": "js_frameworks",
-        "title": "JavaScript Frameworks and Libraries",
-        "description": "Learn about popular JavaScript frameworks and libraries.",
-        "content": [
-          "React: Components, state management, routing",
-          "Vue.js: Components, Vuex for state management, routing",
-          "Angular: Components, services, routing"
-        ]
-      },
-      {
-        "id": "component_architecture",
-        "title": "Component-Based Architecture",
-        "description": "Learn the principles of component-based architecture.",
-        "content": [
-          "What is a component?",
-          "Building reusable components",
-          "State and props"
-        ]
-      },
-      {
-        "id": "state_management",
+        "id": "react_state",
         "title": "State Management",
-        "description": "Learn how to manage state in frontend applications.",
+        "description": "Managing state in React components.",
         "content": [
-          "State management in React (Redux)",
-          "State management in Vue.js (Vuex)",
-          "State management in Angular"
-        ]
-      }
-    ]
-  },
-  "package_build_tools": {
-    "id": "package_build_tools",
-    "title": "Package Managers and Build Tools",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Manage project dependencies and optimize your build process.",
-    "lessons": [
-      {
-        "id": "package_managers",
-        "title": "Package Managers",
-        "description": "Learn to manage project dependencies using package managers.",
-        "content": [
-          "Introduction to npm",
-          "Introduction to Yarn",
-          "Managing dependencies and scripts"
-        ]
+          "useState hook",
+          "Class component state",
+          "Context API for global state management"
+        ],
+        "code_snippets": {
+          "use_state": "import React, { useState } from 'react';\n\nfunction Counter() {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div>\n      <p>You clicked {count} times</p>\n      <button onClick={() => setCount(count + 1)}>Click me</button>\n    </div>\n  );\n}\n\nexport default Counter;"
+        }
       },
       {
-        "id": "build_tools",
-        "title": "Build Tools",
-        "description": "Learn about tools to bundle and optimize your code.",
+        "id": "react_hooks",
+        "title": "React Hooks",
+        "description": "Using hooks to manage state and side effects.",
         "content": [
-          "Introduction to Webpack",
-          "Introduction to Parcel",
-          "Introduction to Vite"
-        ]
+          "useEffect for side effects",
+          "Custom hooks",
+          "Rules of hooks"
+        ],
+        "code_snippets": {
+          "use_effect": "import React, { useEffect } from 'react';\n\nfunction FetchData() {\n  useEffect(() => {\n    fetch('https://api.example.com/data')\n      .then(response => response.json())\n      .then(data => console.log(data));\n  }, []);\n\n  return <div>Data fetched!</div>;\n}\n\nexport default FetchData;"
+        }
       },
       {
-        "id": "task_runners",
-        "title": "Task Runners",
-        "description": "Learn about task runners to automate development tasks.",
+        "id": "react_router",
+        "title": "React Router",
+        "description": "Implementing routing in a React application.",
         "content": [
-          "Introduction to Gulp",
-          "Introduction to Grunt",
-          "Setting up automated tasks"
-        ]
-      }
-    ]
-  },
-  "advanced_js": {
-    "id": "advanced_js",
-    "title": "Advanced JavaScript",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Deepen your understanding of JavaScript and its ecosystem.",
-    "lessons": [
-      {
-        "id": "async_programming",
-        "title": "Asynchronous Programming",
-        "description": "Learn about asynchronous programming in JavaScript.",
-        "content": [
-          "Promises",
-          "async/await",
-          "Fetch API"
-        ]
+          "Setting up React Router",
+          "Defining routes and navigation",
+          "Dynamic routing and route parameters"
+        ],
+        "code_snippets": {
+          "router": "import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';\n\nfunction App() {\n  return (\n    <Router>\n      <Switch>\n        <Route path=\"/home\" component={Home} />\n        <Route path=\"/about\" component={About} />\n      </Switch>\n    </Router>\n  );\n}\n\nexport default App;"
+        }
       },
       {
-        "id": "js_design_patterns",
-        "title": "JavaScript Design Patterns",
-        "description": "Learn common design patterns in JavaScript.",
+        "id": "react_redux",
+        "title": "React and Redux",
+        "description": "Managing global state with Redux in a React application.",
         "content": [
-          "Module pattern",
-          "Singleton pattern",
-          "Observer pattern",
-          "Factory pattern"
-        ]
-      },
-      {
-        "id": "typescript",
-        "title": "TypeScript",
-        "description": "Learn the basics and advantages of using TypeScript.",
-        "content": [
-          "Introduction to TypeScript",
-          "Basic types and interfaces",
-          "TypeScript in React and other frameworks"
-        ]
-      }
-    ]
-  },
-  "api_interaction": {
-    "id": "api_interaction",
-    "title": "API Interaction",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Learn to communicate with servers and fetch data.",
-    "lessons": [
-      {
-        "id": "rest_apis",
-        "title": "REST APIs",
-        "description": "Learn the basics of REST APIs.",
-        "content": [
-          "CRUD operations",
-          "Status codes and headers",
-          "Working with JSON"
-        ]
-      },
-      {
-        "id": "graphql",
-        "title": "GraphQL",
-        "description": "Learn the basics of GraphQL.",
-        "content": [
-          "Introduction to GraphQL",
-          "Queries and mutations",
-          "Using GraphQL clients (Apollo)"
-        ]
-      }
-    ]
-  },
-  "testing": {
-    "id": "testing",
-    "title": "Testing",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Ensure the quality and reliability of your code.",
-    "lessons": [
-      {
-        "id": "unit_testing",
-        "title": "Unit Testing",
-        "description": "Learn about unit testing frameworks.",
-        "content": [
-          "Introduction to Jest",
-          "Introduction to Mocha",
-          "Writing and running unit tests"
-        ]
-      },
-      {
-        "id": "integration_testing",
-        "title": "Integration and End-to-End Testing",
-        "description": "Learn about integration and end-to-end testing frameworks.",
-        "content": [
-          "Introduction to Cypress",
-          "Introduction to Selenium",
-          "Introduction to Puppeteer",
-          "Writing and running integration tests"
-        ]
-      }
-    ]
-  },
-  "performance_optimization": {
-    "id": "performance_optimization",
-    "title": "Performance Optimization",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Improve the speed and responsiveness of your web applications.",
-    "lessons": [
-      {
-        "id": "web_performance",
-        "title": "Web Performance",
-        "description": "Learn techniques to optimize web performance.",
-        "content": [
-          "Lazy loading",
-          "Code splitting",
-          "Image optimization",
-          "Minimizing render-blocking resources"
-        ]
-      },
-      {
-        "id": "web_vitals",
-        "title": "Web Vitals",
-        "description": "Learn about Core Web Vitals and performance auditing tools.",
-        "content": [
-          "Introduction to Core Web Vitals",
-          "Using Lighthouse for performance audits",
-          "Using PageSpeed Insights"
-        ]
-      }
-    ]
-  },
-  "accessibility": {
-    "id": "accessibility",
-    "title": "Accessibility (a11y)",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Ensure your web applications are usable by everyone.",
-    "lessons": [
-      {
-        "id": "accessibility_basics",
-        "title": "Basics",
-        "description": "Learn the basics of web accessibility.",
-        "content": [
-          "ARIA roles and attributes",
-          "Keyboard navigation",
-          "Screen reader compatibility"
-        ]
-      },
-      {
-        "id": "accessibility_tools",
-        "title": "Accessibility Tools",
-        "description": "Learn about tools for auditing and improving accessibility.",
-        "content": [
-          "Introduction to Axe",
-          "Introduction to WAVE",
-          "Using Lighthouse for accessibility audits"
-        ]
-      }
-    ]
-  },
-  "security": {
-    "id": "security",
-    "title": "Security",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Protect your applications from common vulnerabilities.",
-    "lessons": [
-      {
-        "id": "common_vulnerabilities",
-        "title": "Common Vulnerabilities",
-        "description": "Learn about common security vulnerabilities.",
-        "content": [
-          "Cross-Site Scripting (XSS)",
-          "Cross-Site Request Forgery (CSRF)",
-          "Cross-Origin Resource Sharing (CORS)"
-        ]
-      },
-      {
-        "id": "best_practices",
-        "title": "Best Practices",
-        "description": "Learn best practices for securing web applications.",
-        "content": [
-          "Content Security Policy",
-          "Secure cookies",
-          "Using HTTPS"
-        ]
-      }
-    ]
-  },
-  "devops_deployment": {
-    "id": "devops_deployment",
-    "title": "DevOps and Deployment",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Learn to deploy and maintain your applications.",
-    "lessons": [
-      {
-        "id": "hosting_cicd",
-        "title": "Hosting and CI/CD",
-        "description": "Learn about hosting platforms and continuous integration/continuous deployment.",
-        "content": [
-          "Introduction to Netlify",
-          "Introduction to Vercel",
-          "Using GitHub Actions for CI/CD"
-        ]
-      },
-      {
-        "id": "containerization",
-        "title": "Containerization",
-        "description": "Learn the basics of Docker and containerization.",
-        "content": [
-          "Introduction to Docker",
-          "Creating and running Docker containers"
-        ]
-      },
-      {
-        "id": "monitoring",
-        "title": "Monitoring",
-        "description": "Learn about tools for monitoring and error tracking.",
-        "content": [
-          "Introduction to Sentry",
-          "Setting up error tracking and performance monitoring"
-        ]
-      }
-    ]
-  },
-  "soft_skills": {
-    "id": "soft_skills",
-    "title": "Soft Skills and Best Practices",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Develop essential non-technical skills for effective collaboration.",
-    "lessons": [
-      {
-        "id": "communication",
-        "title": "Communication",
-        "description": "Learn effective communication skills for working in teams.",
-        "content": [
-          "Working in teams",
-          "Participating in code reviews"
-        ]
-      },
-      {
-        "id": "project_management",
-        "title": "Project Management",
-        "description": "Learn project management methodologies and tools.",
-        "content": [
-          "Introduction to Agile methodologies",
-          "Using tools like Jira and Trello for project management"
-        ]
-      },
-      {
-        "id": "continuous_learning",
-        "title": "Continuous Learning",
-        "description": "Learn how to stay updated with the latest trends and best practices.",
-        "content": [
-          "Following industry news and blogs",
-          "Participating in online courses and workshops"
-        ]
-      }
-    ]
-  },
-  "portfolio_projects": {
-    "id": "portfolio_projects",
-    "title": "Portfolio and Personal Projects",
-    "description": "THIS LESSON IS STILL BEING UUPDATED. Build a portfolio and engage in projects to showcase your skills.",
-    "lessons": [
-      {
-        "id": "portfolio",
-        "title": "Portfolio",
-        "description": "Learn how to create a personal website to showcase your skills and projects.",
-        "content": [
-          "Designing and building a portfolio website",
-          "Showcasing projects and skills"
-        ]
-      },
-      {
-        "id": "open_source",
-        "title": "Open Source",
-        "description": "Learn about contributing to open source projects.",
-        "content": [
-          "Finding open source projects",
-          "Contributing to open source",
-          "Gaining experience and visibility through open source"
-        ]
-      },
-      {
-        "id": "blogging_content_creation",
-        "title": "Blogging or Content Creation",
-        "description": "Learn how to share your knowledge through blog posts, tutorials, or videos.",
-        "content": [
-          "Writing technical blog posts",
-          "Creating tutorials and videos",
-          "Building an audience and community"
-        ]
+          "Setting up Redux",
+          "Actions and reducers",
+          "Connecting React with Redux using connect and hooks"
+        ],
+        "code_snippets": {
+          "redux": "import { createStore } from 'redux';\n\nconst initialState = { count: 0 };\n\nfunction reducer(state = initialState, action) {\n  switch (action.type) {\n    case 'INCREMENT':\n      return { ...state, count: state.count + 1 };\n    default:\n      return state;\n  }\n}\n\nconst store = createStore(reducer);\n\nexport default store;"
+        }
       }
     ]
   }
